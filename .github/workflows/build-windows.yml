@@ -17,11 +17,11 @@ jobs:
           node-version: 22
           cache: 'pnpm'
 
-      - name: Enable corepack and install pnpm
+      - name: Install pnpm properly
         run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
-          pnpm --version
+          npm install -g pnpm
+          echo "PNPM_HOME=$HOME/.local/share/pnpm" >> $GITHUB_ENV
+          echo "$HOME/.local/share/pnpm" >> $GITHUB_PATH
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
