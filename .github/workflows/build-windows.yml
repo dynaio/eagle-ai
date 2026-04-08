@@ -1,22 +1,27 @@
+
 name: Build EagleAI for Windows
+
 on:
   workflow_dispatch:
+
 jobs:
   build:
     runs-on: windows-latest
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      
-      - name: Install pnpm
-        run: |
-          npm install -g pnpm@latest
-          pnpm --version
+          cache: 'pnpm'
       
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
