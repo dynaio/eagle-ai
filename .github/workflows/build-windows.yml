@@ -17,8 +17,11 @@ jobs:
           node-version: 22
           cache: 'pnpm'
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Enable corepack and install pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+          pnpm --version
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
@@ -36,6 +39,7 @@ jobs:
       - name: Build Python Sidecar (backend.exe)
         run: |
           cd packages/shared-backend
+          python -m pip install --upgrade pip
           python -m pip install pyinstaller
           pyinstaller --onefile --windowed --name backend src/shared_backend/main.py
           mkdir -p ../../apps/eagle-ai/src-tauri/binaries
