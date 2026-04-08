@@ -46,8 +46,7 @@
       "binaries/eagle-sidecar"
     ],
     "resources": [
-      "../src-python/state/*.json",
-      "../src-python/data/*.xls"
+      "../src-python/state/*.json"
     ]
   },
   "plugins": {
