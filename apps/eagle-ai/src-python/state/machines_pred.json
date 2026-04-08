@@ -1,0 +1,1476 @@
+{
+    "machines": [
+        {
+            "machine_id": "MC851",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 95.0,
+                "endsdown_count": 1,
+                "production_kg": 131.5
+            },
+            "maintenance": {
+                "hours_remaining": 36.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-01",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-01",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-01",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-01",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-01",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Vibration intensity increasing"
+            }
+        },
+        {
+            "machine_id": "MC852",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 96.0,
+                "endsdown_count": 2,
+                "production_kg": 132.5
+            },
+            "maintenance": {
+                "hours_remaining": 48.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-01",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-01",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-01",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-01",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-01",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC853",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 97.0,
+                "endsdown_count": 3,
+                "production_kg": 133.5
+            },
+            "maintenance": {
+                "hours_remaining": 60.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-02",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-02",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-02",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-02",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-02",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC854",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 98.0,
+                "endsdown_count": 4,
+                "production_kg": 134.5
+            },
+            "maintenance": {
+                "hours_remaining": 72.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-02",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-02",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-02",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-02",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-02",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC855",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 99.0,
+                "endsdown_count": 0,
+                "production_kg": 135.5
+            },
+            "maintenance": {
+                "hours_remaining": 84.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-03",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-03",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-03",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-03",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-03",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC856",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 92.0,
+                "endsdown_count": 1,
+                "production_kg": 136.5
+            },
+            "maintenance": {
+                "hours_remaining": 96.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-03",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-03",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-03",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-03",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-03",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC857",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 93.0,
+                "endsdown_count": 2,
+                "production_kg": 137.5
+            },
+            "maintenance": {
+                "hours_remaining": 108.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-04",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-04",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-04",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-04",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-04",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC858",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 94.0,
+                "endsdown_count": 3,
+                "production_kg": 138.5
+            },
+            "maintenance": {
+                "hours_remaining": 120.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-04",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-04",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-04",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-04",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-04",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC859",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 95.0,
+                "endsdown_count": 4,
+                "production_kg": 139.5
+            },
+            "maintenance": {
+                "hours_remaining": 132.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-05",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-05",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-05",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-05",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-05",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC860",
+            "status": "Stopped",
+            "performance": {
+                "efficiency_pct": 96.0,
+                "endsdown_count": 0,
+                "production_kg": 120.5
+            },
+            "maintenance": {
+                "hours_remaining": 144.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-05",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-05",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-05",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-05",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-05",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC861",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 97.0,
+                "endsdown_count": 1,
+                "production_kg": 121.5
+            },
+            "maintenance": {
+                "hours_remaining": 156.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-06",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-06",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-06",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-06",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-06",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC862",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 98.0,
+                "endsdown_count": 2,
+                "production_kg": 122.5
+            },
+            "maintenance": {
+                "hours_remaining": 168.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-06",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-06",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-06",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-06",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-06",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC863",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 99.0,
+                "endsdown_count": 3,
+                "production_kg": 123.5
+            },
+            "maintenance": {
+                "hours_remaining": 180.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-07",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-07",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-07",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-07",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-07",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC864",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 92.0,
+                "endsdown_count": 4,
+                "production_kg": 124.5
+            },
+            "maintenance": {
+                "hours_remaining": 192.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-07",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-07",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-07",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-07",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-07",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC865",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 93.0,
+                "endsdown_count": 0,
+                "production_kg": 125.5
+            },
+            "maintenance": {
+                "hours_remaining": 204.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-08",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-08",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-08",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-08",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-08",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC866",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 94.0,
+                "endsdown_count": 1,
+                "production_kg": 126.5
+            },
+            "maintenance": {
+                "hours_remaining": 216.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-08",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-08",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-08",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-08",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-08",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC867",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 95.0,
+                "endsdown_count": 2,
+                "production_kg": 127.5
+            },
+            "maintenance": {
+                "hours_remaining": 228.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-09",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-09",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-09",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-09",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-09",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC868",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 96.0,
+                "endsdown_count": 3,
+                "production_kg": 128.5
+            },
+            "maintenance": {
+                "hours_remaining": 240.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-09",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-09",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-09",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-09",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-09",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC869",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 97.0,
+                "endsdown_count": 4,
+                "production_kg": 129.5
+            },
+            "maintenance": {
+                "hours_remaining": 252.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-10",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-10",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-10",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-10",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-10",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC870",
+            "status": "Stopped",
+            "performance": {
+                "efficiency_pct": 98.0,
+                "endsdown_count": 0,
+                "production_kg": 130.5
+            },
+            "maintenance": {
+                "hours_remaining": 264.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-10",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-10",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-10",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-10",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-10",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC871",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 99.0,
+                "endsdown_count": 1,
+                "production_kg": 131.5
+            },
+            "maintenance": {
+                "hours_remaining": 276.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-11",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-11",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-11",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-11",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-11",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC872",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 92.0,
+                "endsdown_count": 2,
+                "production_kg": 132.5
+            },
+            "maintenance": {
+                "hours_remaining": 288.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-11",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-11",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-11",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-11",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-11",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC873",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 93.0,
+                "endsdown_count": 3,
+                "production_kg": 133.5
+            },
+            "maintenance": {
+                "hours_remaining": 300.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-12",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-12",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-12",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-12",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-12",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC874",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 94.0,
+                "endsdown_count": 4,
+                "production_kg": 134.5
+            },
+            "maintenance": {
+                "hours_remaining": 312.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-12",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-12",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-12",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-12",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-12",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC875",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 95.0,
+                "endsdown_count": 0,
+                "production_kg": 135.5
+            },
+            "maintenance": {
+                "hours_remaining": 324.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-13",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-13",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-13",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-13",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-13",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC876",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 96.0,
+                "endsdown_count": 1,
+                "production_kg": 136.5
+            },
+            "maintenance": {
+                "hours_remaining": 336.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-13",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-13",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-13",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-13",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-13",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC877",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 97.0,
+                "endsdown_count": 2,
+                "production_kg": 137.5
+            },
+            "maintenance": {
+                "hours_remaining": 348.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-14",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-14",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-14",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-14",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-14",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC878",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 98.0,
+                "endsdown_count": 3,
+                "production_kg": 138.5
+            },
+            "maintenance": {
+                "hours_remaining": 360.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-14",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-14",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-14",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-14",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-14",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC879",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 99.0,
+                "endsdown_count": 4,
+                "production_kg": 139.5
+            },
+            "maintenance": {
+                "hours_remaining": 372.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-15",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-15",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-15",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-15",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-15",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC880",
+            "status": "Stopped",
+            "performance": {
+                "efficiency_pct": 92.0,
+                "endsdown_count": 0,
+                "production_kg": 120.5
+            },
+            "maintenance": {
+                "hours_remaining": 384.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-15",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-15",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-15",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-15",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-15",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC881",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 93.0,
+                "endsdown_count": 1,
+                "production_kg": 121.5
+            },
+            "maintenance": {
+                "hours_remaining": 396.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-16",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-16",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-16",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-16",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-16",
+                        "predicted_time": "10:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        },
+        {
+            "machine_id": "MC882",
+            "status": "Running",
+            "performance": {
+                "efficiency_pct": 94.0,
+                "endsdown_count": 2,
+                "production_kg": 122.5
+            },
+            "maintenance": {
+                "hours_remaining": 408.0,
+                "prediction_date": "2026-03-30T22:00:00",
+                "weekly_predictions": [
+                    {
+                        "week": 1,
+                        "predicted_date": "2026-04-16",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 2,
+                        "predicted_date": "2026-04-16",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 3,
+                        "predicted_date": "2026-04-16",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 4,
+                        "predicted_date": "2026-04-16",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    },
+                    {
+                        "week": 5,
+                        "predicted_date": "2026-04-16",
+                        "predicted_time": "22:00",
+                        "margin": "+- 6h"
+                    }
+                ],
+                "urgency_reason": "Normal operational wear"
+            }
+        }
+    ]
+}

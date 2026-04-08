@@ -1,0 +1,209 @@
+
+> EagleAI@0.1.0 tauri /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai
+> tauri "build"
+
+        Info Looking up installed tauri packages to check mismatched versions...
+     Running beforeBuildCommand `pnpm build && cd src-python && python3 build_backend.py`
+
+> EagleAI@0.1.0 build /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai
+> tsc && vite build
+
+vite v7.3.1 building client environment for production...
+transforming...
+✓ 2833 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.96 kB │ gzip:   0.54 kB
+dist/assets/index-BshSY5S-.css   79.03 kB │ gzip:  11.81 kB
+dist/assets/index-N3IJCO0A.js   927.30 kB │ gzip: 273.54 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 24.69s
+132 INFO: PyInstaller: 6.19.0, contrib hooks: 2026.3
+133 INFO: Python: 3.12.3
+135 INFO: Platform: Linux-6.17.0-20-generic-x86_64-with-glibc2.39
+135 INFO: Python environment: /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv
+138 INFO: Removing temporary files and cleaning cache in /home/abdelkader/.cache/pyinstaller
+153 INFO: Module search paths (PYTHONPATH):
+['/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-python',
+ '/usr/lib/python312.zip',
+ '/usr/lib/python3.12',
+ '/usr/lib/python3.12/lib-dynload',
+ '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages',
+ '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai']
+967 INFO: checking Analysis
+967 INFO: Building Analysis because Analysis-00.toc is non existent
+967 INFO: Looking for Python shared library...
+1012 INFO: Using Python shared library: /lib/x86_64-linux-gnu/libpython3.12.so.1.0
+1012 INFO: Running Analysis Analysis-00.toc
+1012 INFO: Target bytecode optimization level: 0
+1013 INFO: Initializing module dependency graph...
+1015 INFO: Initializing module graph hook caches...
+1051 INFO: Analyzing modules for base_library.zip ...
+4558 INFO: Processing standard module hook 'hook-encodings.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+10164 INFO: Processing standard module hook 'hook-pickle.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+13743 INFO: Processing standard module hook 'hook-heapq.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+15075 INFO: Caching module dependency graph...
+15158 INFO: Analyzing /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-python/main.py
+15166 INFO: Processing standard module hook 'hook-uvicorn.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+16148 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+16595 INFO: Processing standard module hook 'hook-xml.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+17109 INFO: Processing standard module hook 'hook-_ctypes.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+18833 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+18835 INFO: SetuptoolsInfo: initializing cached setuptools info...
+19894 INFO: Processing standard module hook 'hook-platform.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+20065 INFO: Processing standard module hook 'hook-difflib.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+21124 INFO: Processing standard module hook 'hook-websockets.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+22887 INFO: Processing standard module hook 'hook-anyio.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+25101 INFO: Processing standard module hook 'hook-pydantic.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+26497 INFO: Processing standard module hook 'hook-zoneinfo.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+26548 INFO: Processing standard module hook 'hook-sysconfig.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+29173 INFO: Processing standard module hook 'hook-pandas.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+31351 INFO: Processing standard module hook 'hook-numpy.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+36946 INFO: Processing standard module hook 'hook-scipy.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+38601 INFO: Processing standard module hook 'hook-torch.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+4211 WARNING: Failed to collect submodules for 'torch.utils.tensorboard' because importing 'torch.utils.tensorboard' raised: ModuleNotFoundError: No module named 'tensorboard'
+/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/utils/hooks/__init__.py:665: DeprecationWarning: `torch.distributed._sharding_spec` will be deprecated, use `torch.distributed._shard.sharding_spec` instead
+  __import__(name)
+/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/utils/hooks/__init__.py:665: DeprecationWarning: `torch.distributed._sharded_tensor` will be deprecated, use `torch.distributed._shard.sharded_tensor` instead
+  __import__(name)
+/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/utils/hooks/__init__.py:665: DeprecationWarning: `torch.distributed._shard.checkpoint` will be deprecated, use `torch.distributed.checkpoint` instead
+  __import__(name)
+56145 INFO: hook-torch: inferred hidden imports for CUDA libraries: []
+59142 INFO: Processing standard module hook 'hook-matplotlib.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+59769 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+59962 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+60521 INFO: Processing standard module hook 'hook-matplotlib.backend_bases.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+60758 INFO: Processing standard module hook 'hook-PIL.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+60962 INFO: Processing standard module hook 'hook-PIL.Image.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+61603 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+62001 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+63681 INFO: Processing standard module hook 'hook-jinja2.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+65032 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+65247 INFO: Processing standard module hook 'hook-matplotlib.pyplot.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+67326 INFO: Processing standard module hook 'hook-dateutil.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+67485 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+88708 INFO: Processing standard module hook 'hook-scipy.linalg.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+88980 INFO: Processing standard module hook 'hook-scipy.special._ufuncs.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+101775 INFO: Processing standard module hook 'hook-setuptools.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+101794 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+102353 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+103826 INFO: Processing standard module hook 'hook-pkg_resources.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+104904 INFO: Processing pre-safe-import-module hook 'hook-win32com.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/pre_safe_import_module'
+105639 INFO: Processing standard module hook 'hook-sqlite3.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+122872 INFO: Processing standard module hook 'hook-fsspec.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+123691 INFO: Processing pre-safe-import-module hook 'hook-backports.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+149918 INFO: Processing standard module hook 'hook-scipy.special._ellip_harm_2.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+153882 INFO: Processing standard module hook 'hook-scipy.spatial._ckdtree.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+155516 INFO: Processing standard module hook 'hook-scipy.spatial.transform.rotation.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+157452 INFO: Processing standard module hook 'hook-scipy.stats._stats.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+158466 INFO: Processing standard module hook 'hook-scipy.sparse.csgraph.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+162884 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+167133 INFO: Processing standard module hook 'hook-scipy.io.matlab.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+173650 INFO: Processing standard module hook 'hook-pandas.io.formats.style.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+176136 INFO: Processing standard module hook 'hook-pyarrow.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+179777 INFO: Processing standard module hook 'hook-pandas.plotting.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+181962 INFO: Processing standard module hook 'hook-openpyxl.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+185973 INFO: Processing standard module hook 'hook-sqlalchemy.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+194553 INFO: Processing standard module hook 'hook-pandas.io.clipboard.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+195609 INFO: Processing standard module hook 'hook-sklearn.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+196042 INFO: Processing standard module hook 'hook-sklearn.utils.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+197177 INFO: Processing standard module hook 'hook-sklearn.externals.array_api_compat.numpy.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+197295 INFO: Processing standard module hook 'hook-sklearn.externals.array_api_compat.cupy.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+197320 INFO: Processing standard module hook 'hook-sklearn.externals.array_api_compat.torch.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+197393 INFO: Processing standard module hook 'hook-sklearn.externals.array_api_compat.dask.array.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+197816 INFO: Processing standard module hook 'hook-sklearn.metrics.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+203544 INFO: Processing standard module hook 'hook-sklearn.metrics.cluster.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+203839 INFO: Processing standard module hook 'hook-sklearn.metrics.pairwise.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+204152 INFO: Processing standard module hook 'hook-sklearn.cluster.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+204536 INFO: Processing standard module hook 'hook-sklearn.neighbors.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+204804 INFO: Processing standard module hook 'hook-sklearn.linear_model.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+211403 INFO: Processing standard module hook 'hook-nvidia.nccl.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+212939 INFO: Processing standard module hook 'hook-patsy.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+215704 INFO: Processing standard module hook 'hook-statsmodels.tsa.statespace.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+224393 INFO: Processing standard module hook 'hook-apscheduler.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+224946 INFO: Processing module hooks (post-graph stage)...
+225509 INFO: Processing standard module hook 'hook-uvloop.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+226016 INFO: Processing standard module hook 'hook-sklearn.tree.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/stdhooks'
+230632 INFO: Processing pre-safe-import-module hook 'hook-tensorflow.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/_pyinstaller_hooks_contrib/pre_safe_import_module'
+242509 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+243836 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+243986 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+244308 WARNING: Hidden import "scipy.special._cdflib" not found!
+244920 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+245397 INFO: Processing standard module hook 'hook-matplotlib.backends.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+245398 INFO: Matplotlib backend selection method: automatic discovery of used backends
+245485 INFO: Discovered Matplotlib backend(s) via `matplotlib.use()` call in module 'sympy.testing.runtests': ['Agg', 'Agg']
+245644 INFO: The following Matplotlib backends were discovered by scanning for `matplotlib.use()` calls: ['Agg']. If your backend of choice is not in this list, either add a `matplotlib.use()` call to your code, or configure the backend collection via hook options (see: https://pyinstaller.org/en/stable/hooks-config.html#matplotlib-hooks).
+245644 INFO: Selected matplotlib backends: ['Agg']
+245644 INFO: Processing standard module hook 'hook-sqlalchemy.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+246239 WARNING: Hidden import "pysqlite2" not found!
+246239 WARNING: Hidden import "MySQLdb" not found!
+246240 WARNING: Hidden import "psycopg2" not found!
+248885 INFO: Processing pre-safe-import-module hook 'hook-platformdirs.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/pre_safe_import_module'
+249230 INFO: Performing binary vs. data reclassification (1260 entries)
+250005 INFO: Looking for ctypes DLLs
+250313 WARNING: Library user32 required via ctypes not found
+250366 WARNING: Library libhiprtc.so required via ctypes not found
+250409 WARNING: Library libamdhip64.so required via ctypes not found
+250651 WARNING: Ignoring /usr/lib64/libgomp.so.1 imported from /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/torch/_inductor/codecache.py - only basenames are supported with ctypes imports!
+251199 WARNING: Library msvcrt required via ctypes not found
+251577 INFO: Analyzing run-time hooks ...
+251624 INFO: Including run-time hook 'pyi_rth_inspect.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+251628 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+251631 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+251635 INFO: Including run-time hook 'pyi_rth_mplconfig.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+251637 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/pre_find_module_path'
+251639 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks'
+251643 INFO: Including run-time hook 'pyi_rth_pkgres.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+251650 INFO: Including run-time hook 'pyi_rth_setuptools.py' from '/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks'
+251883 INFO: Creating base_library.zip...
+251932 INFO: Looking for dynamic libraries
+258820 INFO: Warnings written to /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-python/build/eagle-sidecar/warn-eagle-sidecar.txt
+259475 INFO: Graph cross-reference written to /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-python/build/eagle-sidecar/xref-eagle-sidecar.html
+259859 INFO: checking PYZ
+259859 INFO: Building PYZ because PYZ-00.toc is non existent
+259859 INFO: Building PYZ (ZlibArchive) /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-python/build/eagle-sidecar/PYZ-00.pyz
+270695 INFO: Building PYZ (ZlibArchive) /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-python/build/eagle-sidecar/PYZ-00.pyz completed successfully.
+271038 INFO: checking PKG
+271038 INFO: Building PKG because PKG-00.toc is non existent
+271038 INFO: Building PKG (CArchive) eagle-sidecar.pkg
+515035 INFO: Building PKG (CArchive) eagle-sidecar.pkg completed successfully.
+515129 INFO: Bootloader /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/packages/shared-backend/.venv/lib/python3.12/site-packages/PyInstaller/bootloader/Linux-64bit-intel/run
+515129 INFO: checking EXE
+515189 INFO: Building because toc changed
+515189 INFO: Building EXE from EXE-00.toc
+515193 INFO: Copying bootloader EXE to /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-python/dist/eagle-sidecar
+515193 INFO: Appending PKG archive to custom ELF section in EXE
+530188 INFO: Building EXE from EXE-00.toc completed successfully.
+530610 INFO: Build complete! The results are available in: /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-python/dist
+--- EagleAI: Building Industrial Backend Sidecar ---
+Executing PyInstaller on /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-python/eagle-sidecar.spec...
+Packaging binary as: eagle-sidecar-x86_64-unknown-linux-gnu
+--- Build Success! Binary moved to: /home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-tauri/binaries/eagle-sidecar-x86_64-unknown-linux-gnu ---
+   Compiling tauri v2.10.3
+   Compiling rustls v0.23.37
+   Compiling eagle-ai v1.0.0 (/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-tauri)
+error: failed to run custom build command for `eagle-ai v1.0.0 (/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-tauri)`
+
+Caused by:
+  process didn't exit successfully: `/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-tauri/target/release/build/eagle-ai-b637163184389a9a/build-script-build` (exit status: 1)
+  --- stdout
+  cargo:rerun-if-env-changed=TAURI_CONFIG
+  cargo:rustc-check-cfg=cfg(desktop)
+  cargo:rustc-cfg=desktop
+  cargo:rustc-check-cfg=cfg(mobile)
+  cargo:rerun-if-changed=/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-tauri/tauri.conf.json
+  cargo:rustc-env=TAURI_ANDROID_PACKAGE_NAME_APP_NAME=eagleai
+  cargo:rustc-env=TAURI_ANDROID_PACKAGE_NAME_PREFIX=com_eagle
+  cargo:rustc-check-cfg=cfg(dev)
+  cargo:PERMISSION_FILES_PATH=/home/abdelkader/VSCdium/Workspace/S2/Eagle/my-turborepo/apps/eagle-ai/src-tauri/target/release/build/eagle-ai-9ca60b22aa80eb04/out/app-manifest/__app__-permission-files
+  cargo:rerun-if-changed=capabilities
+  Permission http:allow-request not found, expected one of core:default, core:app:default, core:app:allow-app-hide, core:app:allow-app-show, core:app:allow-bundle-type, core:app:allow-default-window-icon, core:app:allow-fetch-data-store-identifiers, core:app:allow-identifier, core:app:allow-name, core:app:allow-register-listener, core:app:allow-remove-data-store, core:app:allow-remove-listener, core:app:allow-set-app-theme, core:app:allow-set-dock-visibility, core:app:allow-tauri-version, core:app:allow-version, core:app:deny-app-hide, core:app:deny-app-show, core:app:deny-bundle-type, core:app:deny-default-window-icon, core:app:deny-fetch-data-store-identifiers, core:app:deny-identifier, core:app:deny-name, core:app:deny-register-listener, core:app:deny-remove-data-store, core:app:deny-remove-listener, core:app:deny-set-app-theme, core:app:deny-set-dock-visibility, core:app:deny-tauri-version, core:app:deny-version, core:event:default, core:event:allow-emit, core:event:allow-emit-to, core:event:allow-listen, core:event:allow-unlisten, core:event:deny-emit, core:event:deny-emit-to, core:event:deny-listen, core:event:deny-unlisten, core:image:default, core:image:allow-from-bytes, core:image:allow-from-path, core:image:allow-new, core:image:allow-rgba, core:image:allow-size, core:image:deny-from-bytes, core:image:deny-from-path, core:image:deny-new, core:image:deny-rgba, core:image:deny-size, core:menu:default, core:menu:allow-append, core:menu:allow-create-default, core:menu:allow-get, core:menu:allow-insert, core:menu:allow-is-checked, core:menu:allow-is-enabled, core:menu:allow-items, core:menu:allow-new, core:menu:allow-popup, core:menu:allow-prepend, core:menu:allow-remove, core:menu:allow-remove-at, core:menu:allow-set-accelerator, core:menu:allow-set-as-app-menu, core:menu:allow-set-as-help-menu-for-nsapp, core:menu:allow-set-as-window-menu, core:menu:allow-set-as-windows-menu-for-nsapp, core:menu:allow-set-checked, core:menu:allow-set-enabled, core:menu:allow-set-icon, core:menu:allow-set-text, core:menu:allow-text, core:menu:deny-append, core:menu:deny-create-default, core:menu:deny-get, core:menu:deny-insert, core:menu:deny-is-checked, core:menu:deny-is-enabled, core:menu:deny-items, core:menu:deny-new, core:menu:deny-popup, core:menu:deny-prepend, core:menu:deny-remove, core:menu:deny-remove-at, core:menu:deny-set-accelerator, core:menu:deny-set-as-app-menu, core:menu:deny-set-as-help-menu-for-nsapp, core:menu:deny-set-as-window-menu, core:menu:deny-set-as-windows-menu-for-nsapp, core:menu:deny-set-checked, core:menu:deny-set-enabled, core:menu:deny-set-icon, core:menu:deny-set-text, core:menu:deny-text, core:path:default, core:path:allow-basename, core:path:allow-dirname, core:path:allow-extname, core:path:allow-is-absolute, core:path:allow-join, core:path:allow-normalize, core:path:allow-resolve, core:path:allow-resolve-directory, core:path:deny-basename, core:path:deny-dirname, core:path:deny-extname, core:path:deny-is-absolute, core:path:deny-join, core:path:deny-normalize, core:path:deny-resolve, core:path:deny-resolve-directory, core:resources:default, core:resources:allow-close, core:resources:deny-close, core:tray:default, core:tray:allow-get-by-id, core:tray:allow-new, core:tray:allow-remove-by-id, core:tray:allow-set-icon, core:tray:allow-set-icon-as-template, core:tray:allow-set-menu, core:tray:allow-set-show-menu-on-left-click, core:tray:allow-set-temp-dir-path, core:tray:allow-set-title, core:tray:allow-set-tooltip, core:tray:allow-set-visible, core:tray:deny-get-by-id, core:tray:deny-new, core:tray:deny-remove-by-id, core:tray:deny-set-icon, core:tray:deny-set-icon-as-template, core:tray:deny-set-menu, core:tray:deny-set-show-menu-on-left-click, core:tray:deny-set-temp-dir-path, core:tray:deny-set-title, core:tray:deny-set-tooltip, core:tray:deny-set-visible, core:webview:default, core:webview:allow-clear-all-browsing-data, core:webview:allow-create-webview, core:webview:allow-create-webview-window, core:webview:allow-get-all-webviews, core:webview:allow-internal-toggle-devtools, core:webview:allow-print, core:webview:allow-reparent, core:webview:allow-set-webview-auto-resize, core:webview:allow-set-webview-background-color, core:webview:allow-set-webview-focus, core:webview:allow-set-webview-position, core:webview:allow-set-webview-size, core:webview:allow-set-webview-zoom, core:webview:allow-webview-close, core:webview:allow-webview-hide, core:webview:allow-webview-position, core:webview:allow-webview-show, core:webview:allow-webview-size, core:webview:deny-clear-all-browsing-data, core:webview:deny-create-webview, core:webview:deny-create-webview-window, core:webview:deny-get-all-webviews, core:webview:deny-internal-toggle-devtools, core:webview:deny-print, core:webview:deny-reparent, core:webview:deny-set-webview-auto-resize, core:webview:deny-set-webview-background-color, core:webview:deny-set-webview-focus, core:webview:deny-set-webview-position, core:webview:deny-set-webview-size, core:webview:deny-set-webview-zoom, core:webview:deny-webview-close, core:webview:deny-webview-hide, core:webview:deny-webview-position, core:webview:deny-webview-show, core:webview:deny-webview-size, core:window:default, core:window:allow-available-monitors, core:window:allow-center, core:window:allow-close, core:window:allow-create, core:window:allow-current-monitor, core:window:allow-cursor-position, core:window:allow-destroy, core:window:allow-get-all-windows, core:window:allow-hide, core:window:allow-inner-position, core:window:allow-inner-size, core:window:allow-internal-toggle-maximize, core:window:allow-is-always-on-top, core:window:allow-is-closable, core:window:allow-is-decorated, core:window:allow-is-enabled, core:window:allow-is-focused, core:window:allow-is-fullscreen, core:window:allow-is-maximizable, core:window:allow-is-maximized, core:window:allow-is-minimizable, core:window:allow-is-minimized, core:window:allow-is-resizable, core:window:allow-is-visible, core:window:allow-maximize, core:window:allow-minimize, core:window:allow-monitor-from-point, core:window:allow-outer-position, core:window:allow-outer-size, core:window:allow-primary-monitor, core:window:allow-request-user-attention, core:window:allow-scale-factor, core:window:allow-set-always-on-bottom, core:window:allow-set-always-on-top, core:window:allow-set-background-color, core:window:allow-set-badge-count, core:window:allow-set-badge-label, core:window:allow-set-closable, core:window:allow-set-content-protected, core:window:allow-set-cursor-grab, core:window:allow-set-cursor-icon, core:window:allow-set-cursor-position, core:window:allow-set-cursor-visible, core:window:allow-set-decorations, core:window:allow-set-effects, core:window:allow-set-enabled, core:window:allow-set-focus, core:window:allow-set-focusable, core:window:allow-set-fullscreen, core:window:allow-set-icon, core:window:allow-set-ignore-cursor-events, core:window:allow-set-max-size, core:window:allow-set-maximizable, core:window:allow-set-min-size, core:window:allow-set-minimizable, core:window:allow-set-overlay-icon, core:window:allow-set-position, core:window:allow-set-progress-bar, core:window:allow-set-resizable, core:window:allow-set-shadow, core:window:allow-set-simple-fullscreen, core:window:allow-set-size, core:window:allow-set-size-constraints, core:window:allow-set-skip-taskbar, core:window:allow-set-theme, core:window:allow-set-title, core:window:allow-set-title-bar-style, core:window:allow-set-visible-on-all-workspaces, core:window:allow-show, core:window:allow-start-dragging, core:window:allow-start-resize-dragging, core:window:allow-theme, core:window:allow-title, core:window:allow-toggle-maximize, core:window:allow-unmaximize, core:window:allow-unminimize, core:window:deny-available-monitors, core:window:deny-center, core:window:deny-close, core:window:deny-create, core:window:deny-current-monitor, core:window:deny-cursor-position, core:window:deny-destroy, core:window:deny-get-all-windows, core:window:deny-hide, core:window:deny-inner-position, core:window:deny-inner-size, core:window:deny-internal-toggle-maximize, core:window:deny-is-always-on-top, core:window:deny-is-closable, core:window:deny-is-decorated, core:window:deny-is-enabled, core:window:deny-is-focused, core:window:deny-is-fullscreen, core:window:deny-is-maximizable, core:window:deny-is-maximized, core:window:deny-is-minimizable, core:window:deny-is-minimized, core:window:deny-is-resizable, core:window:deny-is-visible, core:window:deny-maximize, core:window:deny-minimize, core:window:deny-monitor-from-point, core:window:deny-outer-position, core:window:deny-outer-size, core:window:deny-primary-monitor, core:window:deny-request-user-attention, core:window:deny-scale-factor, core:window:deny-set-always-on-bottom, core:window:deny-set-always-on-top, core:window:deny-set-background-color, core:window:deny-set-badge-count, core:window:deny-set-badge-label, core:window:deny-set-closable, core:window:deny-set-content-protected, core:window:deny-set-cursor-grab, core:window:deny-set-cursor-icon, core:window:deny-set-cursor-position, core:window:deny-set-cursor-visible, core:window:deny-set-decorations, core:window:deny-set-effects, core:window:deny-set-enabled, core:window:deny-set-focus, core:window:deny-set-focusable, core:window:deny-set-fullscreen, core:window:deny-set-icon, core:window:deny-set-ignore-cursor-events, core:window:deny-set-max-size, core:window:deny-set-maximizable, core:window:deny-set-min-size, core:window:deny-set-minimizable, core:window:deny-set-overlay-icon, core:window:deny-set-position, core:window:deny-set-progress-bar, core:window:deny-set-resizable, core:window:deny-set-shadow, core:window:deny-set-simple-fullscreen, core:window:deny-set-size, core:window:deny-set-size-constraints, core:window:deny-set-skip-taskbar, core:window:deny-set-theme, core:window:deny-set-title, core:window:deny-set-title-bar-style, core:window:deny-set-visible-on-all-workspaces, core:window:deny-show, core:window:deny-start-dragging, core:window:deny-start-resize-dragging, core:window:deny-theme, core:window:deny-title, core:window:deny-toggle-maximize, core:window:deny-unmaximize, core:window:deny-unminimize, http:default, http:allow-fetch, http:allow-fetch-cancel, http:allow-fetch-cancel-body, http:allow-fetch-read-body, http:allow-fetch-send, http:deny-fetch, http:deny-fetch-cancel, http:deny-fetch-cancel-body, http:deny-fetch-read-body, http:deny-fetch-send, opener:default, opener:allow-default-urls, opener:allow-open-path, opener:allow-open-url, opener:allow-reveal-item-in-dir, opener:deny-open-path, opener:deny-open-url, opener:deny-reveal-item-in-dir, shell:default, shell:allow-execute, shell:allow-kill, shell:allow-open, shell:allow-spawn, shell:allow-stdin-write, shell:deny-execute, shell:deny-kill, shell:deny-open, shell:deny-spawn, shell:deny-stdin-write
+warning: build failed, waiting for other jobs to finish...
+failed to build app: failed to build app
+       Error failed to build app: failed to build app
+ ELIFECYCLE  Command failed with exit code 1.

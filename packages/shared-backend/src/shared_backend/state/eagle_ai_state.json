@@ -1,0 +1,176 @@
+{
+    "last_updated": "2026-04-07T19:49:10.944090",
+    "app_info": {
+        "version": "1.3.1",
+        "edition": "ST",
+        "license_status": "Test Mode"
+    },
+    "settings": {
+        "refresh_interval_minutes": 30,
+        "memory_limit_mb": 1024,
+        "default_maintenance_horizon_hours": 240,
+        "critical_threshold_hours": 48,
+        "prediction_interval_weeks": 5,
+        "maintenance_capacity": {
+            "shift1": 3,
+            "shift2": 2,
+            "shift3": 1
+        },
+        "urgency_thresholds": {
+            "critical": 30,
+            "warning": 30,
+            "healthy": 40
+        },
+        "saturation_horizon_days": 15,
+        "database_settings": {
+            "db_type": "SQL Server",
+            "host": "localhost",
+            "username": "",
+            "password": "",
+            "update_interval": 30,
+            "spider_web_active": false,
+            "selected_tables": []
+        },
+        "test_period_days": 120
+    },
+    "global_stats": {
+        "total_machines": 32,
+        "machines_at_risk": 5,
+        "average_efficiency": 94.2,
+        "fleet_integrity_score": 88
+    },
+    "data_upload_count": 2,
+    "uploaded_files": [
+        {
+            "id": "20260407133445",
+            "original_name": "Ring_Spinning_Shift_Report_Shift_filter_Shift_(1,2,3,4,5,6,7,8)-2026Mar31_1349.xls",
+            "internal_name": "production_data_live.xls",
+            "upload_timestamp": "2026-04-07T13:34:45.976294",
+            "status": "processed",
+            "rows": 0
+        },
+        {
+            "id": "20260407152227",
+            "original_name": "Ring_Spinning_Shift_Report_Shift_filter_Shift_(1,2,3,4,5,6,7,8)-2026Mar31_1349.xls",
+            "internal_name": "production_data_live.xls",
+            "upload_timestamp": "2026-04-07T15:22:27.454715",
+            "status": "processed",
+            "rows": 0
+        },
+        {
+            "id": "20260407154352",
+            "original_name": "Ring_Spinning_Shift_Report_Shift_filter_Shift_(1,2,3,4,5,6,7,8)-2026Mar31_1349.xls",
+            "internal_name": "production_data_live.xls",
+            "upload_timestamp": "2026-04-07T15:43:52.860059",
+            "status": "processed",
+            "rows": 0
+        },
+        {
+            "id": "20260407160125",
+            "original_name": "Ring_Spinning_Shift_Report_Shift_filter_Shift_(1,2,3,4,5,6,7,8)-2026Mar31_1349.xls",
+            "internal_name": "production_data_live.xls",
+            "upload_timestamp": "2026-04-07T16:01:25.288220",
+            "status": "processed",
+            "rows": 0
+        },
+        {
+            "id": "20260407194610",
+            "original_name": "Ring_Spinning_Shift_Report_Shift_filter_Shift_(1,2,3,4,5,6,7,8)-2026Mar31_1349.xls",
+            "internal_name": "production_data_live.xls",
+            "upload_timestamp": "2026-04-07T19:46:10.355399",
+            "status": "processed",
+            "rows": 0
+        }
+    ],
+    "notifications": [
+        {
+            "id": "1775597325.802176",
+            "type": "error",
+            "message": "Selected data does not match the model's expectations. Use Red Acknowledge Box.",
+            "timestamp": "2026-04-07T22:28:45.802215",
+            "read": false
+        },
+        {
+            "id": "1775596758.915033",
+            "type": "error",
+            "message": "Selected data does not match the model's expectations. Use Red Acknowledge Box.",
+            "timestamp": "2026-04-07T22:19:18.915052",
+            "read": false
+        },
+        {
+            "id": "1775595497.882617",
+            "type": "error",
+            "message": "Selected data does not match the model's expectations. Use Red Acknowledge Box.",
+            "timestamp": "2026-04-07T21:58:17.882714",
+            "read": false
+        },
+        {
+            "id": "1775595474.648122",
+            "type": "error",
+            "message": "Selected data does not match the model's expectations. Use Red Acknowledge Box.",
+            "timestamp": "2026-04-07T21:57:54.648212",
+            "read": false
+        },
+        {
+            "id": "1775595228.4047",
+            "type": "error",
+            "message": "Selected data does not match the model's expectations. Use Red Acknowledge Box.",
+            "timestamp": "2026-04-07T21:53:48.404785",
+            "read": false
+        },
+        {
+            "id": "1775595216.511293",
+            "type": "error",
+            "message": "Selected data does not match the model's expectations. Use Red Acknowledge Box.",
+            "timestamp": "2026-04-07T21:53:36.511350",
+            "read": false
+        },
+        {
+            "id": "1775587839.456433",
+            "type": "warning",
+            "message": "Predictive window reaching limit (Age: 7 days). Please upload fresh industrial data.",
+            "timestamp": "2026-04-07T19:50:39.456450",
+            "read": false
+        },
+        {
+            "id": "1775587839.182995",
+            "type": "warning",
+            "message": "Predictive window reaching limit (Age: 7 days). Please upload fresh industrial data.",
+            "timestamp": "2026-04-07T19:50:39.183008",
+            "read": false
+        },
+        {
+            "id": "1775587750.947482",
+            "type": "Predictive window reaching limit (Age: 7 days). Please upload fresh industrial data.",
+            "message": "warning",
+            "timestamp": "2026-04-07T19:49:10.947491",
+            "read": false
+        },
+        {
+            "id": "1775587750.945151",
+            "type": "Neural Engine training completed. Roadmap updated.",
+            "message": "success",
+            "timestamp": "2026-04-07T19:49:10.945162",
+            "read": false
+        }
+    ],
+    "manual_upload_allowed": true,
+    "is_processing": false,
+    "model_performance": {
+        "train_accuracy": 0.8972,
+        "val_accuracy": 0.86,
+        "test_accuracy": 0.9116,
+        "test_auc": 0.9524,
+        "test_precision": 0.8964,
+        "test_recall": 0.8607,
+        "test_f1": 0.8782,
+        "training_time_seconds": 5.08
+    },
+    "dataset_info": {
+        "total_rows": 14726,
+        "total_shifts": 610,
+        "first_date": "2025-09-09 06:00:00",
+        "last_date": "2026-03-30 22:00:00",
+        "total_days": 202.67
+    }
+}

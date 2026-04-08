@@ -1,0 +1,1057 @@
+{
+  "app_info": {
+    "days_remaining_in_test": 180,
+    "edition": "ST",
+    "is_activated": false,
+    "license_status": "Test Mode",
+    "test_mode_expiry_date": "2026-09-30T00:00:00Z",
+    "version": "1.3.1"
+  },
+  "data_gap_hours": 0,
+  "global_stats": {
+    "average_efficiency": 96.5,
+    "fleet_integrity_score": 100,
+    "machines_at_risk": 0,
+    "total_machines": 32
+  },
+  "last_updated": "2026-04-02T15:06:42.396939",
+  "machines_data": [
+    {
+      "description": "Rieter G36 Unit 851",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": "2026-04-02T15:14:13.352Z",
+      "machine_id": "MC851",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 24.217513407905077,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.368867",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.368922",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 84.68188549929559,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Stopped"
+    },
+    {
+      "description": "Rieter G36 Unit 852",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": "2026-04-02T15:14:13.352Z",
+      "machine_id": "MC852",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 48.947386065845826,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.368936",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.368945",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 93.34751975183792,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Stopped"
+    },
+    {
+      "description": "Rieter G36 Unit 853",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC853",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 72.79806566963754,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.368953",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.368960",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 96.20951273833504,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 854",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC854",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 95.36098764966194,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.368967",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.368974",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 98.4250305286997,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 855",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC855",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 120.677373204432,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.368981",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.368987",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 87.64014584757126,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 856",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC856",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 143.04920807300005,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.368994",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369000",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 91.48053339623158,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 857",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC857",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 167.35983994129705,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369007",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369014",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 87.38846772305406,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 858",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC858",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 191.00003282759783,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369020",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369027",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 83.06404780091738,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 859",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC859",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 216.4910649483262,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369033",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369040",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 94.80277718951302,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 860",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC860",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 239.71385488289684,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369046",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369052",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 93.64600282711322,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 861",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC861",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 263.97565207945047,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369059",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369065",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 88.44410033398677,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 862",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC862",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 288.53445669099506,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369118",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369127",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 84.71258410050677,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 863",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC863",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 311.4454911788499,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369134",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369140",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 90.45109978944744,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 864",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC864",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 336.6846818523159,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369147",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369154",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 91.856374778871,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 865",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC865",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 23.1896981393534,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369161",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369167",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 97.99411979960102,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 866",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC866",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 47.62722978841336,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369174",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369180",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 88.84184731107129,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 867",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC867",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 72.68321576945561,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369187",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369194",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 82.47518223816675,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 868",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC868",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 96.16333649634645,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369200",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369207",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 89.34199495957758,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 869",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC869",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 120.56774593893375,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369214",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369220",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 92.44522943367537,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 870",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC870",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 144.30041619354606,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369227",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369234",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 93.22138439717465,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 871",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC871",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 167.13754376329277,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369240",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369247",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 83.76997524174087,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 872",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC872",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 192.47159808783036,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369254",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369265",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 96.93893520229668,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 873",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC873",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 215.8489157451406,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369272",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369279",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 89.03212567789035,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 874",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC874",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 239.68205197333208,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369286",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369292",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 95.51933030713988,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 875",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC875",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 264.5927990656639,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369299",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369305",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 83.1422896109695,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 876",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC876",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 288.5746535595689,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369312",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369319",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 91.22320186190926,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 877",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC877",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 311.0914919666714,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369326",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369332",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 86.55170981042885,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 878",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC878",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 335.74420396400194,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369339",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369346",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 88.14279478128479,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 879",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC879",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 24.165243921797085,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369353",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369359",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 93.30754454704984,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 880",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC880",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 48.14197958058993,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369366",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369372",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 92.57824735336396,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 881",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC881",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 71.0545347392508,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369379",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369386",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 92.50814686495796,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    },
+    {
+      "description": "Rieter G36 Unit 882",
+      "last_maintenance_time": "2026-04-02T15:06:42.396814",
+      "last_run_start": "2026-04-02T15:06:42.396814",
+      "last_stop_time": null,
+      "machine_id": "MC882",
+      "maintenance": {
+        "color_code": "#10b981",
+        "confidence_score": 1,
+        "failure_probability": {
+          "24h": 0,
+          "48h": 0,
+          "7d": 0.1
+        },
+        "hours_remaining": 96.70390097299592,
+        "predicted_next_date": "2026-04-02T15:06:42.396814",
+        "prediction_date": "2026-04-03T15:11:14.369392",
+        "urgency_reason": "Baseline operational state."
+      },
+      "metadata": {
+        "industrial_batch": "G36-ST1",
+        "last_calibration": "2026-04-03T15:11:14.369399",
+        "service_engineer": "SYSTEM"
+      },
+      "performance": {
+        "efficiency_pct": 87.52295791166881,
+        "endsdown_count": 0,
+        "production_kg": 0
+      },
+      "recommended_action": "Maintain standard operation.",
+      "status": "Running"
+    }
+  ],
+  "recommendations": {
+    "maintenance_summary": "All 32 machines are currently in optimal condition.",
+    "system_recommendations": "System initialized. Fleet calibrated to optimal baseline.",
+    "urgent_machines_top_5": []
+  },
+  "settings": {
+    "critical_threshold_hours": 40,
+    "default_maintenance_horizon_days": 14,
+    "default_maintenance_horizon_hours": 240,
+    "memory_limit_mb": 1024,
+    "prediction_interval_weeks": 3,
+    "refresh_interval_minutes": 30
+  }
+}

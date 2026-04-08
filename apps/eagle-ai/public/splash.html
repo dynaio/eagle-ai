@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EAGLEAI Loading</title>
+  <link rel="preload" as="image" href="eagle-logo-removebg.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+    }
+
+    .logo-container {
+      width: 180px;
+      height: 180px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.05));
+    }
+
+    .loader {
+      width: 240px;
+      height: 4px;
+      background: rgba(15, 23, 42, 0.05);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .loader-bar {
+      width: 40%;
+      height: 100%;
+      background: #3b82f6;
+      border-radius: 10px;
+      animation: sweep 1.5s infinite ease-in-out;
+    }
+
+    .text {
+      font-size: 10px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      color: rgba(15, 23, 42, 0.4);
+    }
+
+    @keyframes sweep {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(250%);
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1.02);
+        opacity: 0.9;
+      }
+    }
+
+    .logo-rotate {
+      animation: rotateOnce 2s ease-out forwards;
+      perspective: 1200px;
+    }
+
+    @keyframes rotateOnce {
+      from {
+        transform: rotateY(-180deg);
+        opacity: 0;
+        scale: 0.8;
+      }
+
+      to {
+        transform: rotateY(0deg);
+        opacity: 1;
+        scale: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo-container logo-rotate">
+    <img src="eagle-logo-removebg.png" alt="EAGLEAI" class="logo" loading="eager">
+  </div>
+  <div class="loader">
+    <div class="loader-bar"></div>
+  </div>
+  <div class="text">EAGLEAI Industrial Engine v1.3.1</div>
+</body>
+
+</html>

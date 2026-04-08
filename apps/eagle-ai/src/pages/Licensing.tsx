@@ -1,0 +1,230 @@
+import { useState } from 'react';
+import { Key, ShieldCheck, Cpu, Globe, Rocket, Terminal, CheckCircle2, AlertCircle, ChevronLeft } from 'lucide-react';
+import { useLicense } from '@/hooks/useLicense';
+import { cn } from '@/lib/utils';
+import { motion, AnimatePresence } from 'framer-motion';
+import { NavLink } from 'react-router-dom';
+
+export default function Licensing() {
+  const { status, daysRemaining, deploy } = useLicense();
+  const [key, setKey] = useState('');
+  const [isActivating, setIsActivating] = useState(false);
+  const [feedback, setFeedback] = useState<{ type: 'success' | 'error', message: string } | null>(null);
+
+  const handleActivate = async () => {
+    if (!key.trim()) return;
+    setIsActivating(true);
+    setFeedback(null);
+    
+    // Simulate activation delay
+    await new Promise(r => setTimeout(r, 2000));
+    
+    setFeedback({ 
+      type: 'error', 
+      message: 'COMING SOON: This is Test Mode. Activation will be available in the official deployment. For details, contact developer.' 
+    });
+    setIsActivating(false);
+  };
+
+  return (
+    <div className="p-8 space-y-12 pb-32 max-w-5xl mx-auto">
+      <header className="flex flex-col gap-4 text-center items-center relative">
+        {/* Return Button */}
+        <NavLink 
+          to="/" 
+          className="lg:absolute lg:left-0 top-0 flex items-center gap-2 text-[10px] font-black uppercase text-muted-foreground hover:text-primary transition-colors mb-4 lg:mb-0"
+        >
+          <ChevronLeft className="h-4 w-4" /> Exit Activation
+        </NavLink>
+
+        <div className="h-16 w-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-2">
+           <ShieldCheck className="h-10 w-10 text-primary" />
+        </div>
+        <h1 className="text-4xl font-black tracking-tighter uppercase">
+          System <span className="text-primary italic">Activation</span> Center
+        </h1>
+        <p className="text-xs font-black tracking-[0.4em] text-muted-foreground uppercase opacity-60">EagleAI ST Edition — License Management</p>
+        <div className="h-1 w-24 bg-primary rounded-full" />
+      </header>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Left Column: Status Info */}
+        <div className="lg:col-span-1 space-y-6">
+           <StatusCard 
+             status={status} 
+             daysRemaining={daysRemaining} 
+             onDeploy={deploy}
+           />
+           
+           <div className="bg-card border border-border rounded-3xl p-6 space-y-4">
+              <h3 className="text-sm font-black uppercase tracking-widest text-primary flex items-center gap-2">
+                 <Terminal className="h-4 w-4" /> System Specs
+              </h3>
+              <div className="space-y-3">
+                 <SpecItem label="Machine Group" value="Rieter G36" />
+                 <SpecItem label="Fleet Size" value="32 Machines (MC851-MC882)" />
+                 <SpecItem label="Region" value="Algeria (Local Station)" />
+                 <SpecItem label="Version" value="1.3.1-ST" />
+              </div>
+           </div>
+        </div>
+
+        {/* Right Column: Activation Input */}
+        <div className="lg:col-span-2 space-y-8">
+           <div className="bg-card border-2 border-primary/20 rounded-[2.5rem] p-10 relative overflow-hidden group shadow-2xl">
+              <div className="absolute -top-24 -right-24 h-64 w-64 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors" />
+              
+              <div className="relative z-10 space-y-8">
+                 <div className="flex flex-col gap-2">
+                    <h2 className="text-2xl font-black uppercase tracking-tight">Enter Activation Key</h2>
+                    <p className="text-sm text-muted-foreground font-medium">Please enter your 24-character commercial license key to unlock full features and remove evaluation limits.</p>
+                 </div>
+
+                 <div className="flex flex-col gap-4">
+                    <div className="relative">
+                       <Key className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                       <input 
+                         type="text" 
+                         placeholder="XXXX - XXXX - XXXX - XXXX"
+                         className="w-full bg-secondary/50 border-2 border-border p-5 pl-12 rounded-2xl text-lg font-black tracking-widest uppercase focus:border-primary/50 outline-none transition-all placeholder:text-muted-foreground/30"
+                         value={key}
+                         onChange={(e) => setKey(e.target.value)}
+                         disabled={status === 'permanent' || isActivating}
+                       />
+                    </div>
+                    
+                    <button 
+                      onClick={handleActivate}
+                      disabled={!key.trim() || status === 'permanent' || isActivating}
+                      className={cn(
+                        "w-full py-5 rounded-2xl font-black text-sm uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-3 shadow-xl",
+                        status === 'permanent' 
+                          ? "bg-emerald-500 text-white cursor-default" 
+                          : "bg-primary text-primary-foreground hover:scale-[1.02] active:scale-95 disabled:grayscale disabled:opacity-50"
+                      )}
+                    >
+                       {isActivating ? (
+                         <>
+                           <Rocket className="h-5 w-5 animate-bounce" /> Processing Secure Signal...
+                         </>
+                       ) : status === 'permanent' ? (
+                         <>
+                           <CheckCircle2 className="h-5 w-5" /> Product Fully Activated
+                         </>
+                       ) : (
+                         <>
+                           <Globe className="h-5 w-5" /> Synchronize Enterprise License
+                         </>
+                       )}
+                    </button>
+                    
+                    <AnimatePresence>
+                      {feedback && (
+                        <motion.div 
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          className={cn(
+                            "p-5 rounded-2xl border-2 flex items-center gap-3",
+                            feedback.type === 'success' 
+                              ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-500" 
+                              : "bg-rose-500/10 border-rose-500/20 text-rose-500"
+                          )}
+                        >
+                           {feedback.type === 'success' ? <CheckCircle2 className="h-5 w-5 shrink-0" /> : <AlertCircle className="h-5 w-5 shrink-0" />}
+                           <p className="text-xs font-black uppercase tracking-tight">{feedback.message}</p>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                 </div>
+              </div>
+           </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+               <LicenseFeature icon={Cpu} title="Deep TTM Inference" desc="Unlock multi-horizon predictive maintenance with 99.8% precision." />
+               <LicenseFeature icon={Rocket} title="Fleet Intelligence" desc="Advanced categorical analytics for cross-machine fleet optimization." />
+            </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function StatusCard({ status, daysRemaining, onDeploy }: any) {
+  // // // // // const isCritical = (daysRemaining * 24) < 120; // < 5 days
+  // // // // // const isWarning = (daysRemaining * 24) >= 120 && (daysRemaining * 24) < 240; // 5-10 days
+  const isActive = status === 'active';
+  const isExpired = status === 'expired';
+  const isNotDeployed = status === 'not_deployed';
+  const isPermanent = status === 'permanent';
+
+  return (
+    <div className="bg-card border border-border rounded-3xl p-8 space-y-6 shadow-lg">
+       <div className="flex flex-col gap-1">
+          <span className="text-[10px] font-black text-muted-foreground uppercase tracking-widest opacity-60">License Status</span>
+          <h2 className={cn(
+            "text-2xl font-black uppercase tracking-tighter",
+            isPermanent ? "text-emerald-500" : isExpired ? "text-rose-500" : "text-amber-500"
+          )}>
+            {isPermanent ? 'Enterprise' : isExpired ? 'Expired' : isNotDeployed ? 'Pending' : 'Evaluation'}
+          </h2>
+       </div>
+
+       {isActive && (
+         <div className="space-y-3">
+            <div className="flex justify-between items-end">
+               <span className="text-xl font-black text-foreground">{daysRemaining} <span className="text-xs text-muted-foreground italic">days remain</span></span>
+               <span className="text-[10px] font-black opacity-40">185D CAP</span>
+            </div>
+            <div className="w-full bg-secondary h-2.5 rounded-full overflow-hidden border border-border">
+               <motion.div 
+                 initial={{ width: 0 }}
+                 animate={{ width: `${(daysRemaining / 185) * 100}%` }}
+                 className="h-full bg-primary rounded-full shadow-[0_0_10px_rgba(var(--primary),0.5)]" 
+               />
+            </div>
+         </div>
+       )}
+
+       {isNotDeployed && localStorage.getItem('eagle_hide_deploy') !== 'true' && (
+         <button 
+           onClick={onDeploy}
+           className="w-full py-4 bg-primary/20 text-primary border-2 border-primary/30 rounded-2xl font-black text-xs uppercase hover:bg-primary/30 transition-all active:scale-95 shadow-sm"
+         >
+           Initialize 185D Trial Period
+         </button>
+       )}
+
+       {isExpired && (
+         <div className="p-4 bg-rose-500/10 border border-rose-500/20 rounded-2xl">
+            <p className="text-[10px] font-black text-rose-500 leading-relaxed uppercase">
+              Evaluation phase ended. Core prediction engine is locked until activation.
+            </p>
+         </div>
+       )}
+    </div>
+  );
+}
+
+function SpecItem({ label, value }: { label: string, value: string }) {
+  return (
+    <div className="flex justify-between items-center text-[10px] font-medium border-b border-border/50 pb-2">
+       <span className="text-muted-foreground">{label}</span>
+       <span className="font-black text-foreground">{value}</span>
+    </div>
+  );
+}
+
+function LicenseFeature({ icon: Icon, title, desc }: any) {
+  return (
+    <div className="flex gap-4 p-5 bg-card/50 border border-border rounded-2xl transition-all hover:bg-card">
+       <div className="h-10 w-10 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+          <Icon className="h-5 w-5 text-primary" />
+       </div>
+       <div className="space-y-1">
+          <h4 className="text-xs font-black uppercase tracking-tight">{title}</h4>
+          <p className="text-[10px] text-muted-foreground font-medium leading-normal">{desc}</p>
+       </div>
+    </div>
+  );
+}

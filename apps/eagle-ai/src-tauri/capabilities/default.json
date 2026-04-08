@@ -1,0 +1,30 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Default capability for EagleAI",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "shell:allow-open",
+    "http:default",
+    {
+      "identifier": "http:allow-fetch",
+      "scope": {
+        "allow": [
+          {
+            "url": "http://127.0.0.1:*"
+          }
+        ]
+      }
+    },
+    {
+      "identifier": "shell:allow-execute",
+      "allow": [
+        {
+          "name": "eagle-sidecar",
+          "sidecar": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# EagleAI ST Edition: Industrial System State (v1.7)
+
+## 1. System Overview
+EagleAI is a production-hardened predictive maintenance platform for Rieter G36 machines, deployed as a local-first industrial kiosk.
+
+## 2. Python Backend Implementation
+The backend is a FastAPI-based "sidecar" service running on port 6789.
+
+### [Implemented]
+- **Industrial Service Orchestrator (`main.py`)**: Handles all REST traffic from React. Implements session-based fleet isolation via `X-Session-ID`.
+- **TTM Inference Engine (`engine.py`)**: A probabilistic simulation wrapper for TinyTimeMixer. Handles CSV/XLSX shift logs and maps stress factors (RPM/Variance) to failure horizons.
+- **Persistence Vault (`persistence.py`)**: Stores fleet state in local JSON manifests (`industrial_vault/`). No data leaves the workstation.
+
+### [Waiting/Next Steps]
+- **Hardware Integration**: The codebase is ready for `modbus` or `opc-ua` sensor integration to replace manual CSV uploads.
+- **Weights Loading**: In `engine.py`, the `__init__` should be updated to point to actual `.bin` TTM model weights once fine-tuning on site-specific G36 data is complete.
+- **Auth Hardening**: Currently relies on local station IP; industrial LDAP integration is waiting for corporate network specs.
+
+## 3. UI/UX Logic State
+- **Hardened Kiosk**: Zooming, right-clicking, and 3D rotations are disabled for industrial reliability.
+- **Maintenance Horizon**: Controlled by the user via a numeric input (Risk Horizon). Urgency status (Critical/Warning/Optimal) is dynamically calculated relative to this horizon.
+- **Dynamic Visibility**: "Test Mode" and "Support" pages can be hidden via engineering flags in `localStorage`.
+
+## 4. Engineering Verification
+To verify the entire stack:
+1. Start Backend: `python main.py` or `uvicorn main:app --port 6789`.
+2. Access Dashboard: Observe live machine cards populated from the sidecar.
+3. Pulse Ingestion: Upload a shift log in 'Data Input' and monitor the 'Contact Developer' stats increment.

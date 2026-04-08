@@ -1,0 +1,166 @@
+import { useState, useEffect } from 'react';
+import { AlertTriangle, Gauge, Zap, Scale } from 'lucide-react';
+import { v4 as uuidv4 } from 'uuid';
+import { MachineCard, Machine } from '@/components/MachineCard';
+// import { useLicense } from '@/hooks/useLicense';
+import { cn } from '@/lib/utils';
+
+export default function Dashboard() {
+  const [machines, setMachines] = useState<Machine[]>([]);
+  // // // // const { isExpired } = useLicense();
+  const [sessionId] = useState(() => {
+    let id = localStorage.getItem('eagle_session_id');
+    if (!id) {
+      id = uuidv4();
+      localStorage.setItem('eagle_session_id', id);
+    }
+    return id;
+  });
+
+  const fetchMachines = async () => {
+    try {
+      const res = await fetch('http://127.0.0.1:6789/machines', {
+        headers: { 'X-Session-ID': sessionId }
+      });
+      const data = await res.json();
+      if (Array.isArray(data)) {
+        const sorted = [...data].sort((a, b) => a.predicted_maintenance_hours - b.predicted_maintenance_hours);
+        
+        // Only update if sequence changed to avoid card 'reloading'
+        setMachines(prev => {
+           if (JSON.stringify(prev) === JSON.stringify(sorted)) return prev;
+           return sorted;
+        });
+      }
+    } catch (err) {
+      console.error("Failed to fetch machines:", err);
+    }
+  };
+
+  const [gridCols, setGridCols] = useState(() => localStorage.getItem('eagle_cards_per_row') || '4');
+
+  useEffect(() => {
+    fetchMachines();
+    
+    // Polling disabled as per industrial request - machines only update on manual load/model change
+    // const interval = setInterval(fetchMachines, 300000); 
+    
+    const handleStorage = () => setGridCols(localStorage.getItem('eagle_cards_per_row') || '4');
+    window.addEventListener('eagle-refresh', fetchMachines);
+    window.addEventListener('storage', handleStorage);
+
+    return () => {
+      // clearInterval(interval);
+      window.removeEventListener('eagle-refresh', fetchMachines);
+      window.removeEventListener('storage', handleStorage);
+    };
+  }, []);
+
+  const handleStatusUpdate = async (machineId: string, status: string, timestamp?: string) => {
+    try {
+      await fetch('http://127.0.0.1:6789/machine/status', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Session-ID': sessionId },
+        body: JSON.stringify({ 
+           machine_id: machineId, 
+           status, 
+           timestamp: timestamp || new Date().toISOString() 
+        })
+      });
+      fetchMachines();
+    } catch (err) {
+      console.error("Failed to update status:", err);
+    }
+  };
+
+  const stats = {
+    total: machines.length,
+    atRisk: machines.filter(m => m.predicted_maintenance_hours <= 48).length,
+    avgEfficiency: machines.length > 0 ? machines.reduce((acc, m) => acc + m.efficiency, 0) / machines.length : 0,
+    dailyLoss: machines.filter(m => m.status === 'Stopped').length * 24 * 60 * 60 * 5.5 // Dummy formula
+  };
+
+  return (
+    <div className="p-8 space-y-8 pb-32">
+      {/* Header Summary */}
+      <div className="flex flex-col gap-2">
+        <h1 className="text-sm font-black tracking-[0.4em] text-muted-foreground uppercase opacity-80">
+          AI Powered Predictive Maintenance for Rieter G36 Group of Machines - <span className="text-primary italic">TEST MODE</span>
+        </h1>
+        <div className="h-1 w-32 bg-primary rounded-full mt-1" />
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <SummaryCard 
+          title="Total Machines" 
+          value={stats.total.toString()} 
+          icon={Scale} 
+          color="text-blue-400" 
+        />
+        <SummaryCard 
+          title="Machines at Risk" 
+          value={stats.atRisk.toString()} 
+          icon={AlertTriangle} 
+          color={stats.atRisk > 0 ? "text-rose-500" : "text-emerald-500"} 
+          trend={stats.atRisk > 0 ? "Critical Action Required" : "All clear"}
+        />
+        <SummaryCard 
+          title="Average Efficiency" 
+          value={`${stats.avgEfficiency.toFixed(1)}%`} 
+          icon={Gauge} 
+          color="text-emerald-500" 
+        />
+      </div>
+
+      {/* Machine Grid */}
+      <div className="space-y-6 pt-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-2xl font-black uppercase tracking-tight flex items-center gap-2">
+            <Zap className="h-6 w-6 text-primary" /> Rieter G36 Fleet Status
+          </h2>
+          <div className="flex items-center gap-6 text-[10px] font-black text-muted-foreground uppercase tracking-widest bg-secondary/30 px-6 py-2 rounded-full border border-border/50">
+            <span className="flex items-center gap-2"><div className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]" /> Healthy</span>
+            <span className="flex items-center gap-2"><div className="h-2 w-2 rounded-full bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.5)]" /> Attention</span>
+            <span className="flex items-center gap-2"><div className="h-2 w-2 rounded-full bg-rose-500 shadow-[0_0_8px_rgba(244,63,94,0.5)]" /> Critical</span>
+          </div>
+        </div>
+
+        <div className={cn(
+          "grid gap-6",
+          gridCols === '2' ? "grid-cols-1 sm:grid-cols-2" :
+          gridCols === '3' ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" :
+          gridCols === '6' ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6" :
+          "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        )}>
+           {machines.map((machine) => (
+             <MachineCard 
+               key={machine.id} 
+               machine={machine} 
+               onStatusUpdate={handleStatusUpdate} 
+             />
+           ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SummaryCard({ title, value, icon: Icon, color, trend }: any) {
+  return (
+    <div className="bg-card border border-border p-6 rounded-2xl shadow-sm group overflow-hidden relative">
+      <div className="absolute -bottom-4 -right-4 p-4 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+        <Icon className="h-24 w-24 scale-110 rotate-12" />
+      </div>
+      <div className="flex items-start justify-between relative z-10">
+        <div>
+          <p className="text-[10px] font-black text-muted-foreground uppercase tracking-widest mb-1 opacity-60">{title}</p>
+          <p className={cn("text-3xl font-black tracking-tighter", color)}>{value}</p>
+          {trend && <p className="text-[10px] font-bold mt-2 opacity-70 uppercase leading-none">{trend}</p>}
+        </div>
+        <div className={cn("p-2 rounded-xl bg-secondary shadow-inner", color)}>
+          <Icon className="h-5 w-5" />
+        </div>
+      </div>
+    </div>
+  );
+}
