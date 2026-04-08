@@ -13,15 +13,10 @@ jobs:
         with:
           node-version: 22
       
-      - name: Install pnpm using corepack
+      - name: Install pnpm
         run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
-      
-      - name: Verify pnpm installation
-        run: |
+          npm install -g pnpm@latest
           pnpm --version
-          where pnpm
       
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
