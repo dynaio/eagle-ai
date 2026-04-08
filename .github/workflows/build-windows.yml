@@ -1,0 +1,59 @@
+name: Build EagleAI for Windows
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-pc-windows-msvc
+
+      - name: Install Windows dependencies
+        run: |
+          choco install nsis --yes
+          choco install webview2 --yes
+
+      - name: Install project dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build Python Sidecar (backend.exe)
+        run: |
+          cd packages/shared-backend
+          pip install pyinstaller
+          pyinstaller --onefile --windowed --name backend src/shared_backend/main.py
+          mkdir -p ../../apps/eagle-ai/src-tauri/binaries
+          copy dist\backend.exe ../../apps/eagle-ai/src-tauri/binaries\backend.exe
+
+      - name: Build Tauri App for Windows
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          projectPath: apps/eagle-ai
+          includeRelease: true
+
+      - name: Upload Windows Installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: eagle-ai-windows
+          path: apps/eagle-ai/src-tauri/target/release/bundle/nsis/*.exe
