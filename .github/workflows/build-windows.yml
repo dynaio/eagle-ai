@@ -1,9 +1,6 @@
 name: Build EagleAI for Windows
 
 on:
-  push:
-    tags:
-      - 'v*'
   workflow_dispatch:
 
 jobs:
@@ -17,7 +14,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'pnpm'
 
       - name: Install pnpm
@@ -39,7 +36,7 @@ jobs:
       - name: Build Python Sidecar (backend.exe)
         run: |
           cd packages/shared-backend
-          pip install pyinstaller
+          python -m pip install pyinstaller
           pyinstaller --onefile --windowed --name backend src/shared_backend/main.py
           mkdir -p ../../apps/eagle-ai/src-tauri/binaries
           copy dist\backend.exe ../../apps/eagle-ai/src-tauri/binaries\backend.exe
@@ -55,5 +52,5 @@ jobs:
       - name: Upload Windows Installer
         uses: actions/upload-artifact@v4
         with:
-          name: eagle-ai-windows
+          name: EagleAI-Windows-Installer
           path: apps/eagle-ai/src-tauri/target/release/bundle/nsis/*.exe
