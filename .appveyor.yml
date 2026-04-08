@@ -1,0 +1,45 @@
+version: 1.0.{build}
+
+image: Visual Studio 2022
+
+# Tell AppVeyor this is NOT a Visual Studio project
+build: off
+
+environment:
+  nodejs_version: "22"
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm install -g pnpm@9.15.4
+  - refreshenv
+  - pnpm --version
+  - curl -sSf https://win.rustup.rs/x86_64 -o rustup-init.exe
+  - rustup-init.exe -y --default-toolchain stable
+  - set PATH=%USERPROFILE%\.cargo\bin;%PATH%
+  - rustc --version
+  - choco install nsis -y
+  - choco install python311 -y
+  - refreshenv
+
+build_script:
+  - pnpm install --frozen-lockfile
+  - cd packages/shared-backend
+  - python -m pip install --upgrade pip
+  - pip install pyinstaller
+  - pyinstaller --onefile --windowed --name backend src/shared_backend/main.py
+  - ps: New-Item -ItemType Directory -Force -Path "..\..\apps\eagle-ai\src-tauri\binaries"
+  - copy dist\backend.exe ..\..\apps\eagle-ai\src-tauri\binaries\backend.exe
+  - cd ..\..
+  - cd apps/eagle-ai
+  - pnpm tauri build
+
+artifacts:
+  - path: apps/eagle-ai/src-tauri/target/release/bundle/nsis/*.exe
+    name: EagleAI-Windows-Installer
+  - path: apps/eagle-ai/src-tauri/target/release/bundle/msi/*.msi
+    name: EagleAI-Windows-MSI
+
+cache:
+  - node_modules
+  - '%USERPROFILE%\.cargo'
+  - '%USERPROFILE%\.rustup'
