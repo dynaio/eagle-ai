@@ -11,13 +11,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9.15.4
+          run_install: false
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      
-      - name: Install pnpm via npm
-        run: npm install -g pnpm@9.15.4
+          cache: 'pnpm'
       
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -29,18 +33,13 @@ jobs:
         with:
           targets: x86_64-pc-windows-msvc
       
-      - name: Rust cache
-        uses: Swatinem/rust-cache@v2
-        with:
-          workspaces: apps/eagle-ai/src-tauri
-      
       - name: Install Windows dependencies
         run: |
           choco install nsis -y
           choco install webview2 -y
       
       - name: Install project dependencies
-        run: npx pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       
       - name: Build Python Sidecar
         run: |
@@ -55,7 +54,7 @@ jobs:
       - name: Build Tauri App
         run: |
           cd apps/eagle-ai
-          npx pnpm tauri build
+          pnpm tauri build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
