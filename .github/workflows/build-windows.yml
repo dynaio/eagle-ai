@@ -17,14 +17,14 @@ jobs:
           node-version: 22
           cache: 'pnpm'
 
-      - name: Install pnpm (reliable way)
+      - name: Install pnpm using corepack (recommended way)
         run: |
-          npm install -g pnpm
-          echo "C:\Users\runneradmin\AppData\Roaming\npm" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
-          echo "PNPM_HOME=C:\Users\runneradmin\AppData\Roaming\npm" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          corepack enable
+          corepack prepare pnpm@latest --activate
+          pnpm --version
 
-      - name: Verify pnpm installation
-        run: pnpm --version
+      - name: Verify pnpm is in PATH
+        run: where pnpm
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
