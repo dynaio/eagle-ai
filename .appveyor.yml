@@ -18,7 +18,7 @@ install:
   - set PATH=%USERPROFILE%\.cargo\bin;%PATH%
   - rustc --version
   - choco install nsis -y
-  - choco install python311 -y
+  - python --version
   - refreshenv
 
 build_script:
