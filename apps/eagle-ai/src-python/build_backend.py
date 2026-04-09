@@ -32,12 +32,38 @@ def build():
     
     # 1. Install Dependencies
     print("Installing dependencies from requirements.txt...")
+    
+    # Smart Python Discovery: Prefer local venv
     python_cmd = sys.executable
+    venv_dir = root_dir / "venv"
+    if platform.system() == "Windows":
+        venv_py = venv_dir / "Scripts" / "python.exe"
+    else:
+        venv_py = venv_dir / "bin" / "python3"
+        if not venv_py.exists():
+            venv_py = venv_dir / "bin" / "python"
+            
+    if venv_py.exists():
+        python_cmd = str(venv_py)
+        print(f"Using virtual environment: {python_cmd}")
+    else:
+        print(f"Warning: No local venv found at {venv_dir}. Using system Python: {python_cmd}")
+
     try:
         # User requested --no-deps first for reliability
-        subprocess.run([python_cmd, "-m", "pip", "install", "-r", "requirements.txt", "--no-deps"], check=True, cwd=root_dir)
+        pip_args = [python_cmd, "-m", "pip", "install", "-r", "requirements.txt", "--no-deps"]
+        # Add --break-system-packages if we are NOT in a venv and on Linux (PEP 668)
+        if not venv_py.exists() and platform.system() == "Linux":
+            pip_args.append("--break-system-packages")
+            
+        subprocess.run(pip_args, check=True, cwd=root_dir)
+        
         # Then ensure all missing deps are actually there
-        subprocess.run([python_cmd, "-m", "pip", "install", "-r", "requirements.txt"], check=True, cwd=root_dir)
+        pip_args_full = [python_cmd, "-m", "pip", "install", "-r", "requirements.txt"]
+        if not venv_py.exists() and platform.system() == "Linux":
+            pip_args_full.append("--break-system-packages")
+            
+        subprocess.run(pip_args_full, check=True, cwd=root_dir)
         print("Dependencies installed successfully.")
     except subprocess.CalledProcessError as e:
         print(f"Error installing dependencies: {e}")
