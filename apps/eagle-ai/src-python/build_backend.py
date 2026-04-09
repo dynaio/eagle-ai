@@ -23,51 +23,43 @@ def get_target_triple():
     return f"{arch}-unknown"
 
 def build():
-    print("--- EagleAI: Building Industrial Backend Sidecar ---")
+    print("--- Sidecar build started ---")
     
     # Path setup
     root_dir = Path(__file__).resolve().parent
     bin_dir = root_dir.parent / "src-tauri" / "binaries"
     bin_dir.mkdir(parents=True, exist_ok=True)
     
-    # Run PyInstaller
-    # Use the existing spec file
-    print(f"Executing PyInstaller on {root_dir}/eagle-sidecar.spec...")
-    
-    # Dynamic Python Discovery (Crucial for GitHub Actions)
+    # 1. Install Dependencies
+    print("Installing dependencies from requirements.txt...")
     python_cmd = sys.executable
-    # Look for a local venv first (standard for CI/CD)
-    local_venv = root_dir.parent.parent / "packages" / "shared-backend" / ".venv"
-    
-    if platform.system() == "Windows":
-        win_py = local_venv / "Scripts" / "python.exe"
-        if win_py.exists():
-            python_cmd = str(win_py)
-    else:
-        unix_py = local_venv / "bin" / "python3"
-        if unix_py.exists():
-            python_cmd = str(unix_py)
-    
-    print(f"Using Python: {python_cmd}")
-    
     try:
-        subprocess.run([python_cmd, "-m", "PyInstaller", "--clean", "eagle-sidecar.spec"], check=True, cwd=root_dir)
+        # User requested --no-deps first for reliability
+        subprocess.run([python_cmd, "-m", "pip", "install", "-r", "requirements.txt", "--no-deps"], check=True, cwd=root_dir)
+        # Then ensure all missing deps are actually there
+        subprocess.run([python_cmd, "-m", "pip", "install", "-r", "requirements.txt"], check=True, cwd=root_dir)
+        print("Dependencies installed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error installing dependencies: {e}")
+        sys.exit(1)
+
+    # 2. Run PyInstaller
+    print(f"Executing PyInstaller on {root_dir}/eagle-sidecar.spec...")
+    try:
+        subprocess.run([python_cmd, "-m", "PyInstaller", "--clean", "--noconfirm", "eagle-sidecar.spec"], check=True, cwd=root_dir)
     except subprocess.CalledProcessError as e:
         print(f"Error: PyInstaller failed with exit code {e.returncode}")
-        return
+        sys.exit(1)
 
-    # Determine resulting binary path
-    target_name = "eagle-sidecar"
-    if platform.system() == "Windows":
-        target_name += ".exe"
-        
-    dist_path = root_dir / "dist" / target_name
+    # 3. Handle Binary Move/Rename
+    dist_file = "eagle-sidecar.exe" if platform.system() == "Windows" else "eagle-sidecar"
+    dist_path = root_dir / "dist" / dist_file
     
     if not dist_path.exists():
         print(f"Error: Binary not found at {dist_path}")
-        return
-        
-    # Rename and Move to Tauri bin folder
+        sys.exit(1)
+
+    # Tauri requires the target triple suffix to identify the sidecar correctly
     triple = get_target_triple()
     final_name = f"eagle-sidecar-{triple}"
     if platform.system() == "Windows":
@@ -75,10 +67,13 @@ def build():
         
     dest_path = bin_dir / final_name
     
-    print(f"Packaging binary as: {final_name}")
+    print(f"Binary created successfully. Moving to: {dest_path}")
     shutil.copy2(dist_path, dest_path)
     
-    print(f"--- Build Success! Binary moved to: {dest_path} ---")
+    # Also create the simple named copy for convenience
+    shutil.copy2(dist_path, bin_dir / dist_file)
+    
+    print(f"--- Build Success! ---")
 
 if __name__ == "__main__":
     build()

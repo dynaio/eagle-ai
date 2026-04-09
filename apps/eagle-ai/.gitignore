@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Sidecar Build Artifacts
+src-python/build/
+src-python/dist/
+src-python/*.spec
+src-tauri/binaries/eagle-sidecar*
+!src-tauri/binaries/.gitkeep

@@ -225,45 +225,63 @@ pub fn run() {
                 }
             }
 
-            // Spawn Initial Sidecar
-            #[cfg(debug_assertions)]
-            let sidecar_command = {
-                let project_root = std::env::current_dir().unwrap_or_default().parent().map(|p| p.to_path_buf()).unwrap();
-                let main_py = project_root.join("src-python/main.py");
-                
-                let py_cmd = if cfg!(windows) { "python" } else { "python3" };
-                
-                app.shell().command(py_cmd)
+            // Spawn Initial Sidecar with Retry Logic
+            let mut retry_count = 0;
+            const MAX_RETRIES: u32 = 5;
+            let mut success = false;
+
+            while retry_count < MAX_RETRIES && !success {
+                retry_count += 1;
+                log(&format!("Attempt {} to start sidecar...", retry_count));
+
+                #[cfg(debug_assertions)]
+                let sidecar_command = {
+                    let project_root = std::env::current_dir().unwrap_or_default().parent().map(|p| p.to_path_buf()).unwrap();
+                    let main_py = project_root.join("src-python/main.py");
+                    
+                    let py_cmd = if cfg!(windows) { "python" } else { "python3" };
+                    
+                    app.shell().command(py_cmd)
+                        .env("EAGLE_STATE_DIR", &state_dir)
+                        .env("EAGLE_DATA_DIR", &data_dir)
+                        .env("EAGLE_SETTINGS_DIR", &settings_dir)
+                        .current_dir(&app_data)
+                        .args([main_py.to_string_lossy().to_string(), "--port".to_string(), target_port.to_string()])
+                };
+
+                #[cfg(not(debug_assertions))]
+                let sidecar_command = app.shell().sidecar("eagle-sidecar").unwrap()
                     .env("EAGLE_STATE_DIR", &state_dir)
                     .env("EAGLE_DATA_DIR", &data_dir)
                     .env("EAGLE_SETTINGS_DIR", &settings_dir)
                     .current_dir(&app_data)
-                    .args([main_py.to_string_lossy().to_string(), "--port".to_string(), target_port.to_string()])
-            };
+                    .args(["--port", &target_port.to_string()]);
 
-            #[cfg(not(debug_assertions))]
-            let sidecar_command = app.shell().sidecar("eagle-sidecar").unwrap()
-                .env("EAGLE_STATE_DIR", &state_dir)
-                .env("EAGLE_DATA_DIR", &data_dir)
-                .env("EAGLE_SETTINGS_DIR", &settings_dir)
-                .current_dir(&app_data)
-                .args(["--port", &target_port.to_string()]);
+                match sidecar_command.spawn() {
+                    Ok((mut rx, _child)) => {
+                        log("Sidecar started successfully");
+                        let child_state = app.state::<BackendChild>();
+                        *child_state.0.lock().unwrap() = Some(_child);
+                        success = true;
 
-            match sidecar_command.spawn() {
-                Ok((mut rx, _child)) => {
-                    log("SIDE CAR STARTED SUCCESSFULLY");
-                    let child_state = app.state::<BackendChild>();
-                    *child_state.0.lock().unwrap() = Some(_child);
-
-                    tauri::async_runtime::spawn(async move {
-                        while let Some(event) = rx.recv().await {
-                            if let CommandEvent::Terminated(payload) = event {
-                                println!("Sidecar terminated with code {:?}", payload.code);
+                        tauri::async_runtime::spawn(async move {
+                            while let Some(event) = rx.recv().await {
+                                if let CommandEvent::Terminated(payload) = event {
+                                    println!("Sidecar terminated with code {:?}", payload.code);
+                                }
                             }
+                        });
+                    }
+                    Err(e) => {
+                        log(&format!("Attempt {} failed: {}", retry_count, e));
+                        if retry_count < MAX_RETRIES {
+                            log("Waiting 2 seconds before retry...");
+                            std::thread::sleep(std::time::Duration::from_secs(2));
+                        } else {
+                            log("Sidecar failed after 5 attempts");
                         }
-                    });
+                    }
                 }
-                Err(e) => log(&format!("SIDE CAR FAILED: {}", e)),
             }
 
             Ok(())
