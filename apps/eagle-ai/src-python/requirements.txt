@@ -2,7 +2,7 @@ fastapi
 uvicorn[standard]
 pydantic
 polars
-pandas==2.2.3
+pandas==2.2.2
 pyarrow
-scikit-learn
+scikit-learn==1.5.0
 xgboost
